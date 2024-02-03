@@ -13,5 +13,12 @@ This project aims to develop a robust predictive model for assessing the risk of
 ### Dataset
 The dataset comprises variables such as age, gender, blood pressure, cholesterol levels, and other significant CVD risk factors.
 
+
+### PairGrid - Histogram and ScatterPlot
+
+![image](https://github.com/W0474997SteveArmstrong/cardiovascular-disease-risk-prediction/assets/113034949/41717290-3e05-48cb-96b8-09f6917fc4c5)
+
 ### License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
+
+
