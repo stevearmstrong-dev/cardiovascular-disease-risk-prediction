@@ -22,6 +22,9 @@ The dataset comprises variables such as age, gender, blood pressure, cholesterol
 
 ![image](https://github.com/W0474997SteveArmstrong/cardiovascular-disease-risk-prediction/assets/113034949/873e9f70-e0d8-4096-be85-d56ca9003ba5)
 
+### Distribution of the Numerical Features of the Dataset
+
+![image](https://github.com/W0474997SteveArmstrong/cardiovascular-disease-risk-prediction/assets/113034949/4ebfe187-0126-46e4-be60-7ce04449cdb7)
 
 ### License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
