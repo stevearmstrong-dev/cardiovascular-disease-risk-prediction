@@ -1,6 +1,6 @@
 # Cardiovascular Disease Risk Prediction
 
-## Table of Contents
+### Table of Contents
 - [Introduction and Motivation](#introduction-and-motivation)
 - [Features](#features)
 - [Dataset](#dataset)
