@@ -1,5 +1,23 @@
 # Cardiovascular Disease Risk Prediction
 
+## Table of Contents
+- [Introduction and Motivation](#introduction-and-motivation)
+- [Features](#features)
+- [Dataset](#dataset)
+- [Technologies Used](#technologies-used)
+- [Model Building and Training](#model-building-and-training)
+- [Model Validation and Testing](#model-validation-and-testing)
+- [Model Evaluation](#model-evaluation)
+- [Visualizations](#visualizations)
+- [Key Findings](#key-findings)
+- [Report Breakdown](#report-breakdown)
+- [Interpretation](#interpretation)
+- [Impact](#impact)
+- [Contact](#contact)
+- [License](#license)
+
+
+
 ### Introduction and Motivation
 
 This project aims to develop a robust predictive model for assessing the risk of cardiovascular disease (CVD) using the random forest algorithm. Cardiovascular diseases are among the leading causes of mortality globally. Early risk prediction can significantly improve outcomes through timely intervention and preventative measures. This project combines data exploration, visualization, and machine learning to provide insights into CVD risk factors and predict individual risk levels.
@@ -12,6 +30,12 @@ This project aims to develop a robust predictive model for assessing the risk of
 
 ### Dataset
 The dataset comprises variables such as age, gender, blood pressure, cholesterol levels, and other significant CVD risk factors.
+
+### Technologies Used
+- Python
+- Scikit-learn
+- Seaborn
+- Matplotlib
 
 ### Model Building and Training
 
@@ -27,9 +51,6 @@ The RandomForestClassifier from sklearn was used to create a predictive model, w
 ### Model Evaluation
 - **Classification Report**: Generated a detailed classification report using sklearn, providing precision, recall, and f1-score metrics for a comprehensive performance assessment.
 - **ROC Score**: Calculated the receiver operating characteristic (ROC) score, measuring the model's ability to distinguish between classes.
-
-<img width="612" alt="Screenshot 2024-02-03 at 10 50 53 PM" src="https://github.com/W0474997SteveArmstrong/cardiovascular-disease-risk-prediction/assets/113034949/a065e074-6e94-4f33-8b59-b61ac13e129a">
-
 
 ### PairGrid - Histogram and ScatterPlot
 
@@ -90,6 +111,8 @@ While the model performs exceptionally well on class 0 (likely the majority clas
 - **Predictive Power**: This model significantly enhances my ability to predict cardiovascular disease risk, potentially informing more targeted preventative measures.
 - **Model Confidence**: Probability assessments provide valuable insights into the model's confidence in its predictions, guiding clinical decision-making processes.
 
+## Contact
+For any questions or discussions, feel free to contact me at [steve@stevearmstrong.org](mailto:steve@stevearmstrong.org).
 
 ### License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
