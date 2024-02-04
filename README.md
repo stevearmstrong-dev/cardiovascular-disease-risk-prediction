@@ -175,6 +175,6 @@ The notebook includes detailed comments and visualizations to help you understan
 For any questions or discussions, feel free to contact me at [steve@stevearmstrong.org](mailto:steve@stevearmstrong.org).
 
 ### License
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/username/repositoryname/blob/main/LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/W0474997SteveArmstrong/cardiovascular-disease-risk-prediction/blob/main/LICENSE) file for details.
 
 
