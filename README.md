@@ -48,6 +48,47 @@ The RandomForestClassifier from sklearn was used to create a predictive model, w
 ![Factors Causing Heart Disease](https://github.com/W0474997SteveArmstrong/cardiovascular-disease-risk-prediction/assets/113034949/40e5fd17-5538-4ef3-a575-a8a1762004b4)
 
 
+## Key Findings
+- The RandomForestClassifier demonstrated promising accuracy in predicting cardiovascular disease risk, as evidenced by the classification report and ROC score.
+
+<img width="605" alt="Screenshot 2024-02-03 at 10 25 55 PM" src="https://github.com/W0474997SteveArmstrong/cardiovascular-disease-risk-prediction/assets/113034949/63f12547-f63d-403d-8cf9-e88a97026817">
+
+## Report Breakdown:
+
+### Class 0 (Negative Class):
+- **Precision**: 92% of instances predicted as class 0 are actually class 0.
+- **Recall**: The model correctly identifies 100% of all actual class 0 instances.
+- **F1-Score**: 96%, indicating a very high balance between precision and recall for class 0.
+- **Support**: There are 85,134 actual instances of class 0 in the dataset.
+
+### Class 1 (Positive Class):
+- **Precision**: 48% of instances predicted as class 1 are actually class 1.
+- **Recall**: Only 2% of the actual class 1 instances were correctly identified by the model.
+- **F1-Score**: 5%, indicating a poor balance between precision and recall for class 1.
+- **Support**: There are 7,523 actual instances of class 1 in the dataset.
+
+### Accuracy:
+- Overall, the model correctly predicted 92% of all cases. However, this metric can be misleading for imbalanced classes.
+
+### Macro Avg:
+- **Precision**: Average precision across both classes without considering class imbalance is 70%.
+- **Recall**: Average recall across both classes is 51%.
+- **F1-Score**: Average F1 score is 50%.
+
+### Weighted Avg:
+- Accounts for class imbalance by weighting the average based on the number of instances in each class.
+- **Precision**: 88% considering class imbalance.
+- **Recall**: Same as accuracy, 92%.
+- **F1-Score**: 88%, considering class imbalance.
+
+
+## Interpretation:
+
+While the model performs exceptionally well on class 0 (likely the majority class), it struggles significantly with class 1, as indicated by the low recall and F1-score for class 1. This suggests the model is biased towards the majority class and has difficulties identifying the minority class (class 1), which is a common issue in imbalanced datasets.
+
+## Impact
+- **Predictive Power**: This model significantly enhances my ability to predict cardiovascular disease risk, potentially informing more targeted preventative measures.
+- **Model Confidence**: Probability assessments provide valuable insights into the model's confidence in its predictions, guiding clinical decision-making processes.
 
 
 ### License
