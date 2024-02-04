@@ -38,7 +38,31 @@ This project aims to develop a robust predictive model for assessing the risk of
 - Matplotlib
 
 ### Dataset
-The dataset comprises variables such as age, gender, blood pressure, cholesterol levels, and other significant CVD risk factors.
+
+The dataset used in this project is comprehensive, covering a wide range of variables associated with cardiovascular disease (CVD) risk factors. Each record in the dataset represents individual respondents with the following attributes:
+
+- **General_Health**: Overall health rating of the individual (e.g., Excellent, Very Good, Good, Fair, Poor).
+- **Checkup**: Frequency of medical checkups (e.g., Within last year, Within past two years, etc.).
+- **Exercise**: Information on physical activity levels. (Yes/No)
+- **Heart_Disease**: Presence of heart disease (Yes/No).
+- **Skin_Cancer**: History of skin cancer (Yes/No).
+- **Other_Cancer**: History of any cancer other than skin cancer (Yes/No).
+- **Depression**: Indicator of depression (Yes/No).
+- **Diabetes**: Indicates if the individual has diabetes (Yes/No).
+- **Arthritis**: Indicates if the individual has arthritis (Yes/No).
+- **Sex**: Biological sex of the respondent.
+- **Age_Category**: Age range category of the respondent.
+- **Height_(cm)**: Height of the individual in centimeters.
+- **Weight_(kg)**: Weight of the individual in kilograms.
+- **BMI**: Body Mass Index calculated from height and weight.
+- **Smoking_History**: Smoking habits (Yes/No).
+- **Alcohol_Consumption**: Quantity of alcohol consumption.
+- **Fruit_Consumption**: Quantity of fruit consumption habits.
+- **Green_Vegetables_Consumption**: Quantity of green vegetable consumption.
+- **FriedPotato_Consumption**: Quantity of fried potato consumption.
+
+This dataset provides a holistic view of factors that could influence the risk of developing cardiovascular diseases, allowing for detailed analysis and modeling to predict CVD risk.
+
 
 ### Model Building and Training
 
