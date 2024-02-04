@@ -28,14 +28,14 @@ This project aims to develop a robust predictive model for assessing the risk of
 * Data Preprocessing: Employing Scikit-learn for data cleaning and preparation tasks.
 * Predictive Modeling: Building and training a random forest classifier to accurately predict CVD risk.
 
-### Dataset
-The dataset comprises variables such as age, gender, blood pressure, cholesterol levels, and other significant CVD risk factors.
-
 ### Technologies Used
 - Python
 - Scikit-learn
 - Seaborn
 - Matplotlib
+
+### Dataset
+The dataset comprises variables such as age, gender, blood pressure, cholesterol levels, and other significant CVD risk factors.
 
 ### Model Building and Training
 
@@ -52,6 +52,7 @@ The RandomForestClassifier from sklearn was used to create a predictive model, w
 - **Classification Report**: Generated a detailed classification report using sklearn, providing precision, recall, and f1-score metrics for a comprehensive performance assessment.
 - **ROC Score**: Calculated the receiver operating characteristic (ROC) score, measuring the model's ability to distinguish between classes.
 
+## Visualizations
 ### PairGrid - Histogram and ScatterPlot
 
 ![PairGrid Histogram and ScatterPlot](https://github.com/W0474997SteveArmstrong/cardiovascular-disease-risk-prediction/assets/113034949/41717290-3e05-48cb-96b8-09f6917fc4c5)
