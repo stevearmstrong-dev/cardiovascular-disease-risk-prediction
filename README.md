@@ -13,6 +13,7 @@
 - [Report Breakdown](#report-breakdown)
 - [Interpretation](#interpretation)
 - [Impact](#impact)
+- [How to Use](#how-to-use)
 - [Contact](#contact)
 - [License](#license)
 
@@ -30,6 +31,8 @@ This project aims to develop a robust predictive model for assessing the risk of
 
 ### Technologies Used
 - Python
+- numpy
+- pandas
 - Scikit-learn
 - Seaborn
 - Matplotlib
@@ -39,10 +42,20 @@ The dataset comprises variables such as age, gender, blood pressure, cholesterol
 
 ### Model Building and Training
 
-The RandomForestClassifier from sklearn was used to create a predictive model, with `n_estimators` specifying the number of trees in the forest. The model was trained using `X_train` for the input features and `y_train` for the target variable, ensuring a robust learning process.
+The predictive model for cardiovascular disease risk prediction was constructed using the RandomForestClassifier from sklearn, leveraging its capabilities for handling complex datasets with a mix of categorical and numerical data.
 
-<img width="423" alt="Screenshot 2024-02-03 at 10 49 57 PM" src="https://github.com/W0474997SteveArmstrong/cardiovascular-disease-risk-prediction/assets/113034949/9ce8d730-c9db-4b33-ad12-45459ab25342">
+#### Model Configuration
+- **Algorithm**: RandomForestClassifier
+- **Key Parameter**: `n_estimators` was set to specify the number of trees in the forest, chosen based on preliminary validation to balance between overfitting and computational efficiency.
 
+#### Training Process
+- **Training Data**: The model was trained using `X_train` for the input features, encompassing a diverse range of variables such as age, gender, blood pressure, and cholesterol levels.
+- **Target Variable**: `y_train` represented the presence or absence of cardiovascular disease, serving as the output parameter for the model.
+- **Methodology**: Employed a robust training methodology to ensure the model accurately captures the underlying patterns without overfitting to the training data.
+
+![Model Training Visualization](https://github.com/W0474997SteveArmstrong/cardiovascular-disease-risk-prediction/assets/113034949/9ce8d730-c9db-4b33-ad12-45459ab25342)
+
+The RandomForestClassifier was chosen for its efficacy in classification tasks, its intrinsic ability to manage overfitting, and its feature importance capabilities, which are instrumental for understanding the predictive power of the various risk factors involved in cardiovascular disease.
 
 ### Model Validation and Testing
 - **Prediction**: Applied the trained model to the testing dataset to predict cardiovascular disease risk.
@@ -111,6 +124,52 @@ While the model performs exceptionally well on class 0 (likely the majority clas
 ## Impact
 - **Predictive Power**: This model significantly enhances my ability to predict cardiovascular disease risk, potentially informing more targeted preventative measures.
 - **Model Confidence**: Probability assessments provide valuable insights into the model's confidence in its predictions, guiding clinical decision-making processes.
+
+
+## How to Use
+
+This project is designed to be accessible and straightforward to run using Jupyter Notebooks, a popular tool in data science for interactive computing.
+
+### Prerequisites
+
+To run the `cvd_risk_prediction.ipynb` notebook, you'll need to have Python installed on your system along with Jupyter Notebook or JupyterLab. It's also recommended to use a virtual environment for Python projects to manage dependencies effectively.
+
+### Installation
+
+1. **Clone the Repository**: Start by cloning this repository to your local machine.
+   ```bash
+   git clone https://github.com/W0474997SteveArmstrong/cardiovascular-disease-risk-prediction.git
+   cd cardiovascular-disease-risk-prediction
+
+2. **Create a Virtual Environment (Optional but recommended)**:
+   * For **conda** users:
+     ``` bash
+     conda create --name cvd_risk_prediction python=3.8
+     conda activate cvd_risk_prediction
+   * For **venv** users:
+     ```bash
+     python3 -m venv cvd_risk_prediction
+     source cvd_risk_prediction/bin/activate  # On Windows use `cvd_risk_prediction\Scripts\activate`
+
+3. **Install Required Packages**
+   ```bash
+   pip install numpy pandas jupyterlab matplotlib seaborn scikit-learn
+
+4. **Running the Notebook**
+   * Navigate to the Notebook Directory: Change directory to the `notebooks` folder.
+     ```bash
+     cd notebooks
+   * Launch Jupyter Notebook
+   ```bash
+    jupyter notebook
+5. **Open `cvd_risk_prediction.ipynb` in the Jupyter Notebook interface** and follow the instructions within the notebook to run the analyses.
+
+### Understanding the Results
+The notebook includes detailed comments and visualizations to help you understand each step of the process, from data exploration to model evaluation. Here's what to look for:
+
+* Data Exploration and Visualization: Initial sections of the notebook provide insights into the dataset's structure and distribution of variables.
+* Model Training: Look for the section where the RandomForestClassifier is trained with the cvd_cleaned.csv dataset.
+* Model Evaluation: The final sections will show the model's performance on the test set, including accuracy, precision, recall, and the ROC score. Interpret these metrics to gauge the model's effectiveness in predicting cardiovascular disease risk.
 
 ## Contact
 For any questions or discussions, feel free to contact me at [steve@stevearmstrong.org](mailto:steve@stevearmstrong.org).
